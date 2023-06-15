@@ -1,0 +1,20 @@
+# Limits on the speed and steering angle
+max_speed: 0.5 # m/s
+max_angular: 0.0728 # rad/s 
+
+# Enables joystick if true
+joy: true
+joy_max_speed: 1
+joy_max_angular: 6.868 # 1*2/0.2912
+
+joy_speed_axis: 1
+joy_angular_axis: 3
+
+joy_underarm_F: 2 # arm of chassis,forward control
+joy_underarm_B: 5 # arm of chassis,backward control
+
+
+joy_auto_button: 3
+joy_manual_button: 2
+
+update_pose_rate: 0.01

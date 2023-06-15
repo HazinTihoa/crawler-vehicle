@@ -1,0 +1,8 @@
+prefix=/home/tzh/transformer_ws/install
+
+Name: basic_ctrl
+Description: Description of basic_ctrl
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs message_runtime

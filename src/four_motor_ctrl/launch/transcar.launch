@@ -1,0 +1,9 @@
+<launch>
+    <!-- 添加被执行的文件 -->
+    <node pkg="four_motor_ctrl" type="xzl_ctrl" name="car_ctrl" output="screen"   />
+    <node pkg="plotjuggler" type="plotjuggler" name="plotjuggler"   />
+    <include file="$(find basic_ctrl)/launch/run.launch" />
+
+
+
+</launch>

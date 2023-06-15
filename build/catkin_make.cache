@@ -1,0 +1,2 @@
+basic_ctrl:four_motor_ctrl
+-DCATKIN_DEVEL_PREFIX=/home/tzh/transformer_ws/devel -DCMAKE_INSTALL_PREFIX=/home/tzh/transformer_ws/install -G Unix Makefiles

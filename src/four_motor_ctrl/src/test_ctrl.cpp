@@ -32,7 +32,7 @@ void motorCtrl::init(ros::NodeHandle &nh, int mid, int sid_) //serial0
     motor_s.id = mid;
     sid = sid_;
 //this->serial=SerialPort("/dev/ttyUSB" + to_string(sid));
-    infoPub = nh.advertise<four_motor_ctrl::motorinfo>("/m"+to_string(mid)+"info", 10);
+    infoPub = nh.advertise<four_motor_ctrl::motorinfo>("/s"+to_string(sid)+"/m"+to_string(mid)+"info", 10);
 }
 void motorCtrl::pubInfo(four_motor_ctrl::motorinfo info)
 {
@@ -338,8 +338,8 @@ void crawler_front(motorsetCtrl &ms0,motorsetCtrl &ms1)
 
     ms1.sinMove(-vel_joy+turn_joy,pos_joy,modeB,1);
     ms1.pos_synchronous(-vel_joy+turn_joy,pos_arm,modeB,1);
-    // ms1.showInfo();
-    // ms0.showInfo();
+     ms1.showInfo();
+     ms0.showInfo();
 
 }
 
